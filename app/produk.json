@@ -1,0 +1,339 @@
+{
+    "flower": [
+        {
+            "id": 1,
+            "gambar": "/asset/aglaonema.jpeg",
+            "nama": "Aglonema",
+            "harga": 15000,
+            "qty": 1,
+            "deskripsi": "",
+            "totalProduk": 15000
+            
+        },
+        {
+            "id": 2,
+            "gambar": "/asset/blazingBlossoms.png",
+            "nama": "Blazing Blossoms",
+            "harga": 15000,
+            "qty": 1,
+            "deskripsi": "A fiery mix of texture and color, this vibrant bouquet is the perfect fit for the one who's looking for something out of the norm this season. Cool blue tones from thistle fit perfectly alongside bursts of orange roses and bright, golden craspedia. Send this arrangement and watch sparks fly.",
+            "totalProduk": 15000
+            
+        },
+        {
+            "id": 3,
+            "gambar": "/asset/autumnSymphony.png",
+            "nama": "Atumn Symphony",
+            "harga": 15000,
+            "qty": 1,
+            "deskripsi": "A lavish bouquet inspired by the colors of autumn, featuring exquisite roses, freesias, and seasonal blooms, arranged with branches and adorned with beads in a chic vase.",
+            "totalProduk": 15000
+            
+        },
+        {
+            "id": 4,
+            "gambar": "/asset/blueHarmony.png",
+            "nama": "Blue Harmony",
+            "harga": 15000,
+            "qty": 1,
+            "deskripsi": "The bohemian spirit and undeniable beauty of 'Blue Harmony' are hard to resist. Hints of blue, coupled with ivory and lavender, make it a harmonious choice that is both calming and balancing. It’s the obvious choice for adding some soft sweetness and tranquility to your space.",
+            "totalProduk": 15000
+            
+        },
+        {
+            "id": 5,
+            "gambar": "/asset/dawnsDelight.png",
+            "nama": "Dawns Delight",
+            "harga": 15000,
+            "qty": 1,
+            "deskripsi": "This exquisite bouquet features a delicate blend of garden roses, fragrant freesias, lisianthus, and dahlias, all artfully arranged with alchemilla for a touch of elegance",
+            "totalProduk": 15000
+            
+        },
+        {
+            "id": 6,
+            "gambar": "/asset/mysticalMajesty.png",
+            "nama": "Mystical Majesty",
+            "harga": 15000,
+            "qty": 1,
+            "deskripsi": "A vibrant mix of purple, lilac and pink blossoms. The feminine color palette is pretty without being overtly sweet, much like the rare and magical creature it is named after. Add a touch of purple this season with a mix of lavender-hued roses and sprigs of aster.",
+            "totalProduk": 15000
+            
+        },
+        {
+            "id": 7,
+            "gambar": "/asset/pinkElegance.png",
+            "nama": "Pink Elegance",
+            "harga": 15000,
+            "qty": 1,
+            "deskripsi": "A grand and sophisticated bouquet in shades of pink, featuring stunning Liliums, Callas, Hydrangeas, Celosia, and Hibiscus fruits, adorned with exotic foliage for added opulence.",
+            "totalProduk": 15000
+            
+        },
+        {
+            "id": 8,
+            "gambar": "/asset/snowfall.png",
+            "nama": "Snowfall",
+            "harga": 15000,
+            "qty": 1,
+            "deskripsi": "Indulge in pure elegance with our exquisite bouquet, crafted in shades of pristine white. Lush lilies, roses, nerines, euphorbia and hydrangeas come together in a refined and stunning arrangement.",
+            "totalProduk": 15000
+            
+        },
+        {
+            "id": 9,
+            "gambar": "/asset/rosyperfection.png",
+            "nama": "Rosyperfection",
+            "harga": 15000,
+            "qty": 1,
+            "deskripsi": "Filled with the most beautiful of nature in pink and warm orange tones. In this design you will find, among others, the pink Acroclinium and Curly Ting Ting. The latter looks just as cheerful as its name suggests. And of course, this beautiful bouquet is not complete without the pretty spray rose.",
+            "totalProduk": 15000
+            
+        },
+        {
+            "id": 10,
+            "gambar": "/asset/rusticCharm.png",
+            "nama": "Rustic Charm",
+            "harga": 15000,
+            "qty": 1,
+            "deskripsi": "A charming bouquet inspired by the countryside, featuring delicate Ancient Roses, Euphorbia, Asclepias, Celosia, and Crocosmias, beautifully arranged to evoke warmth and comfort.",
+            "totalProduk": 15000
+            
+        },
+        {
+            "id": 11,
+            "gambar": "/asset/serenity.png",
+            "nama": "Serenity",
+            "harga": 15000,
+            "qty": 1,
+            "deskripsi": "A charming bouquet of understated elegance and harmony, featuring exquisite roses, hydrangeas, and ranunculus in soft, delicate tones.",
+            "totalProduk": 15000
+            
+        },
+        {
+            "id": 12,
+            "gambar": "/asset/frostywinter.png",
+            "nama": "Frosty Winter",
+            "harga": 15000,
+            "qty": 1,
+            "deskripsi": "Filled with special stems with natural flower color, because we do not dye our flowers. A bouquet that you will enjoy for a long time. Plus: We have already done the arranging for you, the bouquet can be placed directly in the vase!",
+            "totalProduk": 15000
+            
+        }
+
+    ],
+
+    "Plant": [
+        {
+            "id": 1,
+            "gambar": "/asset/birdsnestfern.jpeg",
+            "nama": "Bird Nestfern",
+            "harga": 10000,
+            "qty": 1,
+            "deskripsi": "A lavish bouquet inspired by the colors of autumn, featuring exquisite roses, freesias, and seasonal blooms, arranged with branches and adorned with beads in a chic vase.",
+            "totalProduk": 10000
+        },
+        {
+            "id": 2,
+            "gambar": "/asset/snakeplant.jpeg",
+            "nama": "Snake Plant",
+            "harga": 15000,
+            "qty": 1,
+            "deskripsi": "A lavish bouquet inspired by the colors of autumn, featuring exquisite roses, freesias, and seasonal blooms, arranged with branches and adorned with beads in a chic vase.",
+            "totalProduk": 15000
+        },
+        {
+            "id": 3,
+            "gambar": "/asset/cereusJamacaru.jpeg",
+            "nama": "Cereus Jamacaru",
+            "harga": 15000,
+            "qty": 1,
+            "deskripsi": "A lavish bouquet inspired by the colors of autumn, featuring exquisite roses, freesias, and seasonal blooms, arranged with branches and adorned with beads in a chic vase.",
+            "totalProduk": 15000
+        },
+        {
+            "id": 4,
+            "gambar": "/asset/licualaGrandis.jpeg",
+            "nama": "Licuala Grandis",
+            "harga": 15000,
+            "qty": 1,
+            "deskripsi": "A lavish bouquet inspired by the colors of autumn, featuring exquisite roses, freesias, and seasonal blooms, arranged with branches and adorned with beads in a chic vase.",
+            "totalProduk": 15000
+        },
+        {
+            "id": 5,
+            "gambar": "/asset/zamioculcasZamiifolia.jpeg",
+            "nama": "Zamioculcas Zamiifolia",
+            "harga": 15000,
+            "qty": 1,
+            "deskripsi": "A lavish bouquet inspired by the colors of autumn, featuring exquisite roses, freesias, and seasonal blooms, arranged with branches and adorned with beads in a chic vase.",
+            "totalProduk": 15000
+        },
+        {
+            "id": 6,
+            "gambar": "/asset/stromantheTriostar.jpeg",
+            "nama": "Stromanthe Triostar",
+            "harga": 15000,
+            "qty": 1,
+            "deskripsi": "A lavish bouquet inspired by the colors of autumn, featuring exquisite roses, freesias, and seasonal blooms, arranged with branches and adorned with beads in a chic vase.",
+            "totalProduk": 15000
+        },
+        {
+            "id": 7,
+            "gambar": "/asset/palemParlor.jpeg",
+            "nama": "Palem Parlor",
+            "harga": 15000,
+            "qty": 1,
+            "deskripsi": "A lavish bouquet inspired by the colors of autumn, featuring exquisite roses, freesias, and seasonal blooms, arranged with branches and adorned with beads in a chic vase.",
+            "totalProduk": 15000
+        },
+        {
+            "id": 8,
+            "gambar": "/asset/memelong.jpeg",
+            "nama": "Memelong",
+            "harga": 15000,
+            "qty": 1,
+            "deskripsi": "Indulge in pure elegance with our exquisite bouquet, crafted in shades of pristine white. Lush lilies, roses, nerines, euphorbia and hydrangeas come together in a refined and stunning arrangement.",
+            "totalProduk": 15000
+        },
+        {
+            "id": 9,
+            "gambar": "/asset/marantaLeuconeura.jpeg",
+            "nama": "Maranta Leuconeura",
+            "harga": 15000,
+            "qty": 1,
+            "deskripsi": "Indulge in pure elegance with our exquisite bouquet, crafted in shades of pristine white. Lush lilies, roses, nerines, euphorbia and hydrangeas come together in a refined and stunning arrangement.",
+            "totalProduk": 15000
+        },
+        {
+            "id": 10,
+            "gambar": "/asset/aloeVera.jpeg",
+            "nama": "Aloe Vera",
+            "harga": 15000,
+            "qty": 1,
+            "deskripsi": "Indulge in pure elegance with our exquisite bouquet, crafted in shades of pristine white. Lush lilies, roses, nerines, euphorbia and hydrangeas come together in a refined and stunning arrangement.",
+            "totalProduk": 15000
+        },
+        {
+            "id": 11,
+            "gambar": "/asset/aglaonema.jpeg",
+            "nama": "Aglonema",
+            "harga": 15000,
+            "qty": 1,
+            "deskripsi": "Indulge in pure elegance with our exquisite bouquet, crafted in shades of pristine white. Lush lilies, roses, nerines, euphorbia and hydrangeas come together in a refined and stunning arrangement.",
+            "totalProduk": 15000
+        }
+    ],
+
+    "populerProduk": [
+        {
+            "id": 1,
+            "gambar": "/asset/birdsnestfern.jpeg",
+            "nama": "Bird Nestfern",
+            "harga": 10000,
+            "qty": 1,
+            "deskripsi": "A lavish bouquet inspired by the colors of autumn, featuring exquisite roses, freesias, and seasonal blooms, arranged with branches and adorned with beads in a chic vase.",
+            "totalProduk": 10000
+        },
+        {
+            "id": 2,
+            "gambar": "/asset/snakeplant.jpeg",
+            "nama": "Snake Plant",
+            "harga": 15000,
+            "qty": 1,
+            "deskripsi": "A lavish bouquet inspired by the colors of autumn, featuring exquisite roses, freesias, and seasonal blooms, arranged with branches and adorned with beads in a chic vase.",
+            "totalProduk": 15000
+        },
+        {
+            "id": 3,
+            "gambar": "/asset/cereusJamacaru.jpeg",
+            "nama": "Cereus Jamacaru",
+            "harga": 15000,
+            "qty": 1,
+            "deskripsi": "A lavish bouquet inspired by the colors of autumn, featuring exquisite roses, freesias, and seasonal blooms, arranged with branches and adorned with beads in a chic vase.",
+            "totalProduk": 15000
+        },
+        {
+            "id": 4,
+            "gambar": "/asset/licualaGrandis.jpeg",
+            "nama": "Licuala Grandis",
+            "harga": 15000,
+            "qty": 1,
+            "deskripsi": "A lavish bouquet inspired by the colors of autumn, featuring exquisite roses, freesias, and seasonal blooms, arranged with branches and adorned with beads in a chic vase.",
+            "totalProduk": 15000
+        },
+        {
+            "id": 5,
+            "gambar": "/asset/zamioculcasZamiifolia.jpeg",
+            "nama": "Zamioculcas Zamiifolia",
+            "harga": 15000,
+            "qty": 1,
+            "deskripsi": "A lavish bouquet inspired by the colors of autumn, featuring exquisite roses, freesias, and seasonal blooms, arranged with branches and adorned with beads in a chic vase.",
+            "totalProduk": 15000
+        },
+        {
+            "id": 6,
+            "gambar": "/asset/stromantheTriostar.jpeg",
+            "nama": "Stromanthe Triostar",
+            "harga": 15000,
+            "qty": 1,
+            "deskripsi": "A lavish bouquet inspired by the colors of autumn, featuring exquisite roses, freesias, and seasonal blooms, arranged with branches and adorned with beads in a chic vase.",
+            "totalProduk": 15000
+        },
+        {
+            "id": 7,
+            "gambar": "/asset/palemParlor.jpeg",
+            "nama": "Palem Parlor",
+            "harga": 15000,
+            "qty": 1,
+            "deskripsi": "A lavish bouquet inspired by the colors of autumn, featuring exquisite roses, freesias, and seasonal blooms, arranged with branches and adorned with beads in a chic vase.",
+            "totalProduk": 15000
+        },
+        
+        {
+            "id": 8,
+            "gambar": "/asset/snowfall.png",
+            "nama": "Snowfall",
+            "harga": 15000,
+            "qty": 1,
+            "deskripsi": "Indulge in pure elegance with our exquisite bouquet, crafted in shades of pristine white. Lush lilies, roses, nerines, euphorbia and hydrangeas come together in a refined and stunning arrangement.",
+            "totalProduk": 15000
+            
+        }
+        
+    
+        
+    ],
+    "totalHarga": 45000,
+    "Slider" : [
+        {
+            "id": 1,
+            "href": "/asset/slider1.jpeg"
+        },
+        {
+            "id": 2,
+            "href": "/asset/slider2.jpeg"
+        },
+        {
+            "id": 3,
+            "href": "/asset/slider3.jpeg"
+        },
+        {
+            "id": 4,
+            "href": "/asset/slider4.jpeg"
+        },
+        {
+            "id": 5,
+            "href": "/asset/slider5.jpeg"
+        },
+        {
+            "id": 6,
+            "href": "/asset/slider6.jpeg"
+        },
+        {
+            "id": 7,
+            "href": "/asset/slider7.jpeg"
+        }
+    ]
+}
+
