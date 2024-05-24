@@ -2,6 +2,7 @@
 
 import Image from "next/image"
 import ShapeAbout from '@/public/wave.svg'
+import { motion, useTransform, useInView, useScroll, useMotionValueEvent } from "framer-motion"
 
 export default function AboutPage() {
   return (
@@ -20,20 +21,26 @@ export default function AboutPage() {
           </div>
         </div>
       </div >
-        <div>
-          <Image
-            priority
-            src={ShapeAbout}
-            alt="Follow us on Twitter"
-            className="w-full"
-          />
-        </div>
+      <div>
+        <Image
+          priority
+          src={ShapeAbout}
+          alt="Follow us on Twitter"
+          className="w-full"
+        />
+      </div>
       <div className="flex justify-center items-center">
         <h1 className="text-8xl font-bold">Vision and Mission</h1>
       </div>
       <div className="h-[1000px] flex justify-between mt-20">
         <div className="w-1/2 flex justify-around items-center flex-col h-full">
-          <Image src="/asset/toko1.jpg" alt="" width={1000} height={1000} className="w-4/5 max-h-[500px] object-cover rounded-tl-3xl" />
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            className="w-4/5 h-4/5"
+          >
+            <Image src="/asset/toko1.jpg" alt="" width={1000} height={1000} className="w-4/5 max-h-[500px] object-cover rounded-tl-3xl" />
+          </motion.div>
           <div className="flex flex-col justify-center items-start gap-5 w-4/5 mt-20">
             <h1 className="text-8xl font-bold">MISI</h1>
             <p className="text-xl">Quality and Variety: To offer a diverse selection of high-quality ornamental plants that cater to various tastes and preferences.
@@ -47,12 +54,18 @@ export default function AboutPage() {
         <div className="w-[100px] flex justify-center">
           <div className="w-1 h-full bg-black"></div>
         </div>
-        <div className="w-1/2  flex justify-around items-center text-left flex-col h-full">
+        <div className="w-1/2  flex justify-between items-center text-left flex-col h-full">
           <div className="flex flex-col justify-center items-start gap-5 w-4/5">
             <h1 className="text-8xl font-bold">VISI</h1>
             <p className="text-xl">To become the premier destination for plant enthusiasts, inspiring a greener world by connecting people with nature through beautiful and sustainable ornamental plants.</p>
           </div>
-          <Image src="/asset/toko2.jpg" width={1000} height={100} alt="toko2" className="w-4/5 max-h-[500px] object-cover rounded-tr-3xl" />
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            className="w-4/5"
+          >
+            <Image src="/asset/toko2.jpg" width={1000} height={100} alt="toko2" className="w-4/5 max-h-[500px] object-cover rounded-tr-3xl" />
+          </motion.div>
         </div>
       </div>
     </>

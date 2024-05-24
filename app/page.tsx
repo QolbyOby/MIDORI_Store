@@ -14,6 +14,7 @@ import Marquee from "react-fast-marquee";
 import { motion } from "framer-motion";
 import { useState } from 'react';
 import ButtonRounded from '@/components/buttonRounded';
+import Text from "@/components/TextAnimation/Text"
 
 
 const DynamicButtonRounded = dynamic(() => import('@/components/buttonRounded'), {
@@ -70,13 +71,13 @@ export default function Home() {
         <div className='w-full h-60 bg-gradient-to-t from-black absolute bottom-0 '></div>
         <div className='absolute top-0 w-full h-screen flex items-center justify-center'>
           <div className=" z-10 flex flex-col items-center justify-center  text-[#F7F6BB] border-2 border-white p-6 rounded-lg backdrop-blur-lg ">
-            <h1 className="text-6xl font-bold">緑</h1>
-            <h1 className="text-6xl font-bold">MIDORI </h1>
-            <div className='max-w-3xl text-center my-6'>
-              <p className="text-4xl font-normal">The most complete and high quality collection of ornamental plants</p>
-              <p className="text-4xl font-normal">Realize your dream decoration with ornamental plants</p>
+            <div className='max-w-[1128] text-center my-6 leading-tight'>
+              <h1 className='font-bold text-[82px]'>Bring Serenity to Your Place <br />
+                With Interior Plants</h1>
             </div>
-            {/* <p className='max-w-3xl text-justify my-6'>Carilah sentuhan alam yang menyegarkan di rumahmu dengan koleksi tanaman hias kami yang indah dan beragam. Kami menawarkan berbagai jenis tanaman hias, dari yang mudah dirawat hingga yang langka dan eksotis. Temukan tanaman hias yang sempurna untuk melengkapi dekorasi rumahmu dan membawa kesegaran alami ke dalam ruangan.</p> */}
+            <div className='text-center mb-6'>
+              <p className='text-[24px]'>find your dream plant for you home decoration <br />with us, and we will make it happen.</p>
+            </div>
             <NavLink href={'/katalog'} nameValue={<DynamicButtonRounded buttonName='Katalog' />} />
 
           </div>
@@ -88,7 +89,7 @@ export default function Home() {
       <div className='w-full flex justify-center bg-black items-center flex-col'>
         <Image src="/asset/bonsai.png" alt="" width={1000} height={1000} />
         <div className='my-6'>
-          <ButtonRounded buttonName='About us'/>
+          <ButtonRounded buttonName='About us' />
         </div>
         <div className='flex w-full h-[550px]'>
           <Marquee speed={100}>
@@ -97,11 +98,11 @@ export default function Home() {
                 key={item.id}
                 className='flex px-3'
               >
-                <motion.div 
-                  whileHover={{ scale: 1.1,}}
+                <motion.div
+                  whileHover={{ scale: 1.1, }}
                   transition={{ duration: 0.5, type: "spring", stiffness: 400, damping: 10 }}
                 >
-                  <Image src={item.href} alt="" width={400} height={400} className={`max-w-[300px] h-[500px] object-cover ${item.id%2 === 0 ? "rounded-tr-3xl" : "rounded-tl-3xl"}`}/>
+                  <Image src={item.href} alt="" width={400} height={400} className={`max-w-[300px] h-[500px] object-cover ${item.id % 2 === 0 ? "rounded-tr-3xl" : "rounded-tl-3xl"}`} />
                 </motion.div>
               </div>
             ))}
@@ -135,7 +136,7 @@ export default function Home() {
               </div>
 
               <button onClick={() => handleAddToCart(item)} className="mb-6">
-                <Button buttonName='Add to Cart'/>
+                <Button buttonName='Add to Cart' />
               </button>
             </div>
           ))}
