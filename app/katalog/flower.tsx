@@ -45,11 +45,11 @@ export default function Dimsum() {
     }
   }
 
-  
+
 
   return (
     <motion.div
-      className="grid grid-cols-4 gap-4"
+      className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
       initial={{ y: 10, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       exit={{ y: -10, opacity: 0 }}
@@ -61,7 +61,6 @@ export default function Dimsum() {
           className={`cursor-pointer bg-[#12372A] flex flex-col justify-evenly items-center h-auto ${item.id % 2 === 0 ? "rounded-r-3xl" : "rounded-l-3xl"
             }`}
         >
-
           <div className="h-[440px] w-full">
             <DynamicKatalogLink nameValue={<Image
               src={item.gambar}
@@ -79,9 +78,8 @@ export default function Dimsum() {
             <h1 className="text-2xl font-semibold text-[#FBFADA]">{item.nama}</h1>
             <h2 className="text-l text-[#FBFADA]">{item.harga}</h2>
           </div>
-
           <button onClick={() => handleAddToCart(item)} className="mb-6">
-            <Button buttonName="Add To Cart"/>
+            <Button buttonName="Add To Cart" />
           </button>
         </div>
       ))}

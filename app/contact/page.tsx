@@ -40,13 +40,13 @@ export default function Home() {
     <div>
       <div className="flex flex-col items-center justify-center mt-36">
         <div>
-          <h1 className="text-8xl font-bold">CONTACT PAGE</h1>
+          <h1 className="text-7xl font-bold">CONTACT</h1>
         </div>
-        <div className="flex justify-center items-center flex-col mb-10 mt-10">
+        <div className="flex justify-center items-center flex-col my-10 px-10">
           <FaLocationDot className="text-5xl" />
-          <h1 className="text-4xl font-medium text-center">Getaskerep Village, <br />RT 07 RW 02, Talang District, Tegal Regency</h1>
+          <h1 className="text-2xl sm:text-3xl text-center">Getaskerep Village, <br />RT 07 RW 02, Talang District, Tegal Regency</h1>
         </div>
-        <Map />
+          <Map />
         <div className="w-full">
           <SosialMedia />
         </div>

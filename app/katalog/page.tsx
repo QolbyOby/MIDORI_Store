@@ -7,27 +7,26 @@ import { SetStateAction, useState } from 'react'
 import { motion } from 'framer-motion'
 
 
-export default function Dimsum(){
+export default function Dimsum() {
 
     const pathName = usePathname()
     const [state, setState] = useState(<DimsumComponen />)
 
-    const NavigationProduct = ({nameValue, href}: {nameValue: string, href: React.SetStateAction<React.JSX.Element>}) => {
+    const NavigationProduct = ({ nameValue, href }: { nameValue: string, href: React.SetStateAction<React.JSX.Element> }) => {
         return (
-            <div>
-                <motion.h1 className='text-xl font-bold cursor-pointer' onClick={() => {setState((href))}} whileHover={{ scale: 1.1 }}>{nameValue}</motion.h1>
-                {state === href ? null : <motion.div><hr/></motion.div> }
+            <div className='text-center p-2 rounded-full outline outline-2 hover:outline-4 '>
+                <motion.h1 className='text-xl font-medium cursor-pointer' onClick={() => { setState((href)) }} whileHover={{ scale: 1.1 }}>{nameValue}</motion.h1>
             </div>
         )
     }
 
     return (
         <div className='mt-20 px-4 py-20 mx-5 bg-[#ADBC9F]'>
-            <h1 className='text-8xl font-bold text-center mb-10'>CATALOG</h1>
+            <h1 className='text-7xl font-bold text-center mb-10'>CATALOG</h1>
             <hr className='w-full h-1 bg-black mt-4'/>
             <div className='flex gap-10 flex-wrap my-10 justify-center'>
-                <NavigationProduct nameValue='Fresh Flower' href={(<DimsumComponen />)}/>
-                <NavigationProduct nameValue='Live Plants' href={(<NasiCokot />)}/>
+                <NavigationProduct nameValue='Fresh Flower' href={(<DimsumComponen />)} />
+                <NavigationProduct nameValue='Live Plants' href={(<NasiCokot />)} />
             </div>
             {state}
         </div>

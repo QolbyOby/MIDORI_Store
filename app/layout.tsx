@@ -1,6 +1,6 @@
 
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
+import { Work_Sans } from "next/font/google";
 import "./globals.css";
 import Prvider from "@/components/redux/provider";
 import { Toaster } from "sonner";
@@ -10,8 +10,14 @@ const DynamicNav = dynamic(() => import("../components/nav"), {
   ssr: false
 });
 
+const Footer = dynamic(() => import("@/components/Fotter/Fotter"), {
+  ssr: false
+});
 
-const inter = Roboto({ subsets: ["latin"], weight: ["400", "700"] });
+
+const inter = Work_Sans({ subsets: ["latin"], weight: ["400", "700"] });
+
+
 
 
 export const metadata: Metadata = {
@@ -28,11 +34,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <main>
+        <main >
           <Toaster richColors />
           <Prvider>
               <DynamicNav />
               {children}
+              <Footer />
           </Prvider>
         </main>
       </body>

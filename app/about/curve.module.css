@@ -1,0 +1,32 @@
+.curve {
+    clip-path: ellipse(100% 59% at 50% 40%);
+    -webkit-clip-path: ellipse(100% 59% at 50% 40%);
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    .curve {    
+        clip-path: ellipse(70% 59% at 50% 40%);
+        -webkit-clip-path: ellipse(70% 59% at 50% 40%);
+    }
+}
+
+
+@keyframes moveRight {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100vw);
+    }
+  }
+  
+  .moving-box {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: moveRight 2s linear infinite alternate;
+  }
+
+/* 70% 59% at 50% 40% */
