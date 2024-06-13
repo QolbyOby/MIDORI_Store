@@ -14,9 +14,15 @@ import Marquee from "react-fast-marquee";
 import { motion } from "framer-motion";
 import { useState } from 'react';
 import ButtonRounded from '@/components/buttonRounded';
-import Text from "@/components/TextAnimation/Text"
 import NewProduck from '@/components/NewProduck/NewProduck';
-import { ImLeaf } from "react-icons/im";
+import { saveCartToFirebase } from './lib/firebase/service';
+import convertPrice from './katalog/convertPrice';
+import { AiFillDollarCircle } from "react-icons/ai";
+import { FaCheckCircle } from "react-icons/fa";
+import { BiSolidLeaf } from "react-icons/bi";
+
+import PopulerCategory from '@/components/PopulerCategory/page';
+import CardTestimonial from '@/components/CardTestimonial/page';
 
 
 const DynamicButtonRounded = dynamic(() => import('@/components/buttonRounded'), {
@@ -43,6 +49,7 @@ interface Slider {
 }
 
 export default function Home() {
+
 
   const dispatch = useDispatch();
 
@@ -94,18 +101,33 @@ export default function Home() {
         <div className='relative  text-[#F7F6BB] flex flex-col justify-center items-center'>
           <div className='absolute flex flex-col gap-4 top-0 md:top-48 md:flex-row md:h-[450px] md:w-[1100px] md:justify-between lg:top-96'>
             <h1 className='md:absolute md:left-[440px] md:top-20 md:text-4xl text-center text-xl font-semibold'> Why Choose Us</h1>
-            <div className='md:h-[200px] md:w-[300px] h-[100px] w-[200px] px-2  flex flex-col justify-center items-center backdrop-blur-xl border-2 border-[#F7F6BB] rounded-xl'>
-              <h3 className='md:text-2xl md:font-semibold font-normal text-center'>wide Selection</h3>
+            <motion.div className='md:h-[200px] md:w-[300px] h-[100px] w-[200px] px-2  flex flex-col justify-center items-center backdrop-blur-xl border-2 border-[#F7F6BB] rounded-xl'
+              initial={{ x: -100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ amount: 0.5 }}
+              transition={{ duration: 0.5, delay: 1 }}
+            >
+              <h3 className='flex gap-2 items-center md:text-2xl md:font-semibold font-normal text-center'>wide Selection <span><FaCheckCircle /></span></h3>
               <p className='md:text-lg  font-light text-center text-xs leading-4 '>“Explore a vast range of indoor and outdoor plants, from tropical palms.”</p>
-            </div>
-            <div className='md:self-end md:h-[200px] md:w-[300px] h-[100px] w-[200px] px-2  flex flex-col justify-center items-center backdrop-blur-xl border-2 border-[#F7F6BB] rounded-xl'>
-              <h3 className=' md:text-2xl md:font-semibold font-normal text-center'>wide Selection</h3>
-              <p className='md:text-lg  font-light text-center text-xs leading-4 '>“Explore a vast range of indoor and outdoor plants, from tropical palms.”</p>
-            </div>
-            <div className='md:h-[200px] md:w-[300px] h-[100px] w-[200px] px-2  flex flex-col justify-center items-center backdrop-blur-xl border-2 border-[#F7F6BB] rounded-xl'>
-              <h3 className=' md:text-2xl md:font-semibold font-normal text-center'>wide Selection</h3>
-              <p className='md:text-lg  font-light text-center text-xs leading-4 '>“Explore a vast range of indoor and outdoor plants, from tropical palms.”</p>
-            </div>
+            </motion.div>
+            <motion.div className='md:self-end md:h-[200px] md:w-[300px] h-[100px] w-[200px] px-2  flex flex-col justify-center items-center backdrop-blur-xl border-2 border-[#F7F6BB] rounded-xl'
+              initial={{ y: 100, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ amount: 0.5 }}
+              transition={{ duration: 0.5 }}
+            >
+              <h3 className='flex gap-2 items-center md:text-2xl md:font-semibold font-normal text-center'>Affordable <span><AiFillDollarCircle /></span></h3>
+              <p className='md:text-lg  font-light text-center text-xs leading-4 '>“We offer competitive prices for our houseplants and flowers.”</p>
+            </motion.div>
+            <motion.div className='md:h-[200px] md:w-[300px] h-[100px] w-[200px] px-2  flex flex-col justify-center items-center backdrop-blur-xl border-2 border-[#F7F6BB] rounded-xl'
+              initial={{ x: 100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ amount: 0.5 }}
+              transition={{ duration: 0.5, delay: 1 }}
+            >
+              <h3 className='flex gap-2 items-center md:text-2xl md:font-semibold font-normal text-center'>Crop Variety <span><BiSolidLeaf /></span></h3>
+              <p className='md:text-lg  font-light text-center text-xs leading-4 '>“We offer a wide variety of ornamental plants to suit all tastes and needs.”</p>
+            </motion.div>
           </div>
           <Image src="/asset/bonsai.png" alt="" width={1000} height={1000} loading='lazy' />
           <div className='mb-6 mt-24'>
@@ -124,7 +146,7 @@ export default function Home() {
                     whileHover={{ scale: 1.1, }}
                     transition={{ duration: 0.5, type: "spring", stiffness: 400, damping: 10 }}
                   >
-                    <Image src={item.href} alt="" width={400} loading="lazy" height={400} className={`max-w-[300px] h-[500px] object-cover ${item.id % 2 === 0 ? "rounded-tr-3xl" : "rounded-tl-3xl"}`} />
+                    <Image src={item.href} alt="" width={400} loading="lazy" height={400} className="max-w-[300px] h-[500px] object-cover rounded-t-3xl" />
                   </motion.div>
                 </div>
               ))}
@@ -132,13 +154,42 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className='relative flex-col w-full h-80 overflow-hidden flex justify-center items-center'>
+        <Image src={"/asset/daun-kecil-3.svg"} alt="" width={200} height={200} className="w-[200px] absolute hidden lg:block -top-[70px] -right-[80px]  -z-10 rotate-[280deg]" />
+        <Image src={"/asset/daun-kecil-2.svg"} alt="" width={200} height={200} className="w-[200px] absolute hidden lg:block top-[5px] -right-[80px]  -z-40 rotate-[300deg]" />
+        <Image src={"/asset/daun-kecil-1.svg"} alt="" width={200} height={200} className="w-[250px] absolute hidden lg:block -top-[110px] -right-[30px] -z-40  rotate-[230deg]" />
+        <Image src={"/asset/daun-kecil-3.svg"} alt="" width={200} height={200} className="w-[200px] absolute hidden lg:block -top-[70px] -left-[80px]  -z-10 rotate-[80deg] scale-x-[-1]" />
+        <Image src={"/asset/daun-kecil-2.svg"} alt="" width={200} height={200} className="w-[200px] absolute hidden lg:block top-[5px] -left-[80px]  -z-40 rotate-[60deg] scale-x-[-1]" />
+        <Image src={"/asset/daun-kecil-1.svg"} alt="" width={200} height={200} className="w-[250px] absolute hidden lg:block -top-[110px] -left-[30px] -z-40  rotate-[120deg] scale-x-[-1]" />
+        <h1 className='text-7xl font-bold text-center mb-6 bg-gradient-to-r from-[#094401] to-[#437b51] text-transparent bg-clip-text'>Populer Category</h1>
+        <p className='text-center w-[400px]'>in our shop has 2 sales categories, namely the first selling various types of flowers and the second selling various types of ornamental plants. and we will add other types of plants in the future. </p>
+      </div>
       <div className='px-6'>
+        <div className='flex flex-col w-full md:flex-row md:justify-center items-center gap-10 xl:gap-14'>
+          <motion.div
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ amount: 0.5 }}
+          >
+            <PopulerCategory href='/asset/slider2.jpeg' name='Live Plant' />
+          </motion.div>
+          <motion.div
+            initial={{ x: 100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ amount: 0.5 }}
+          >
+            <PopulerCategory href='/asset/flowerCategory.jpeg' name='Fresh Flower' />
+          </motion.div>
+        </div>
         <div>
-          <h1 className='text-7xl font-bold text-center my-24'>New Produck</h1>
+          <h1 className='text-7xl font-bold text-center my-24 bg-gradient-to-r from-[#094401] to-[#437b51] text-transparent bg-clip-text'>New Product</h1>
           <NewProduck href='/asset/aglaonema.jpeg' deskripsi='A lavish bouquet inspired by the colors of autumn, featuring exquisite roses, freesias, and seasonal blooms, arranged with branches and adorned with beads in a chic vase.' />
           <NewProduck href='/asset/zamioculcasZamiifolia.jpeg' deskripsi='A lavish bouquet inspired by the colors of autumn, featuring exquisite roses, freesias, and seasonal blooms, arranged with branches and adorned with beads in a chic vase.' />
         </div>
-        <h1 className='text-7xl font-bold text-center my-24'>POPULER PRODUCK</h1>
+        <h1 className='text-7xl font-bold text-center my-24 bg-gradient-to-r from-[#094401] to-[#437b51] text-transparent bg-clip-text'>Populer Product</h1>
+
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
           {produk.populerProduk.map((item: Product) => (
             <div
@@ -160,7 +211,7 @@ export default function Home() {
               </div>
               <div className="flex flex-col justify-center items-center my-6">
                 <h1 className="text-2xl font-semibold text-[#FBFADA]">{item.nama}</h1>
-                <h2 className="text-l text-[#FBFADA]">{item.harga}</h2>
+                <h2 className="text-l text-[#FBFADA]">{convertPrice(item.harga)}</h2>
               </div>
               <button onClick={() => handleAddToCart(item)} className="mb-6">
                 <Button buttonName='Add to Cart' />
@@ -172,34 +223,91 @@ export default function Home() {
           <NavLink href={'/katalog'} nameValue={<DynamicButtonRounded buttonName='All Product' />} />
         </div>
       </div>
-      <div className='flex-col flex lg:flex-row justify-center items-center gap-24 mb-20 '>
-        <div className='w-[300px] h-[400px] lg:w-[500px] lg:h-[500px] rounded-tr-full rounded-tl-full overflow-hidden outline outline-4 outline-offset-2 outline-[#fbfada]'>
-          <Image src={'/asset/toko1.jpg'} alt="" width={1000} height={1000} loading='lazy' className='w-full h-full object-cover' />
+      <div className='flex-col flex lg:flex-row justify-center items-center gap-24 mb-20'>
+        <div className='relative w-[300px] h-[400px] lg:w-[500px] lg:h-[700px] rounded-t-full outline outline-4 outline-offset-2 outline-[#fbfada]'>
+          <motion.div
+            initial={{ x: 100, y: 100, zIndex: '-100' }}
+            whileInView={{ x: 0, y: 0, zIndex: -1 }}
+            viewport={{ amount: "all" }}
+            transition={{ duration: 0.5 }}
+            className='z-40 hidden xl:block'
+          >
+            <Image
+              src={"/asset/daun-kecil-3.svg"}
+              alt=""
+              width={200}
+              height={200}
+              className="w-[200px] rotate-[20deg] absolute -top-[70px] right-[410px] -z-10"
+            />
+          </motion.div>
+          <motion.div
+            initial={{ x: 200, y: 200, zIndex: '-100' }}
+            whileInView={{ x: 0, y: 0, zIndex: -1 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+            viewport={{ amount: "all" }}
+            className='-z-10 hidden xl:block'
+          >
+            <Image src={"/asset/daun-kecil-2.svg"} alt="" width={200} height={200} className="w-[250px] absolute top-[10px] right-[430px]  -z-40 rotate-[30deg]" />
+          </motion.div>
+          <motion.div
+            initial={{ x: 100, y: 100, zIndex: '-100' }}
+            whileInView={{ x: 0, y: 0, zIndex: -1 }}
+            transition={{ duration: 0.5, delay: 1 }}
+            viewport={{ amount: "all" }}
+            className='-z-10 hidden md:block'
+          >
+            <Image src={"/asset/daun-kecil-1.svg"} alt="" width={200} height={200} className="w-[250px] absolute -top-[110px] right-[300px] -z-40  rotate-[20deg]" />
+          </motion.div>
+          <div className="relative z-10 w-full h-full">
+            <Image
+              src={'/asset/gambarHowTo.jpeg'}
+              alt=""
+              width={1000}
+              height={1000}
+              loading='lazy'
+              className='w-full h-full object-cover rounded-t-full'
+            />
+          </div>
         </div>
         <div className='lg:w-[600px] px-9'>
-          <h1 className='text-5xl font-bold mb-6'>
-            how to care for plants
+          <h1 className='text-5xl font-bold mb-6 text-center lg:text-start'>
+            How To Care For Plants
           </h1>
-          <ul className='list-disc text-xl'>
-            <li className='mb-3'>
-              <span className='font-bold'>Water: </span>
+          <p className='mb-5 text-center lg:text-start'>
+            There are several ways to care for plants. Here are some tips that will help you keep them healthy and thriving.
+          </p>
+          <ul className=' text-xl'>
+            <li className='mb-3 flex justify-center items-center gap-5'>
+              <div className='w-[110px]'><Image src={'/asset/daunHowTo.svg'} alt="daun" width={50} height={50} loading='lazy' className='w-full h-full' /></div>
               Water the plants every day. They need to be kept alive in the shade of the leaves.
             </li >
-            <li className='mb-3'>
-              <span className='font-bold'>Fertilize: </span>
+            <li className='mb-3 flex justify-center items-center gap-5'>
+              <div className='w-[110px]'><Image src={'/asset/daunHowTo.svg'} alt="daun" width={50} height={50} loading='lazy' className='w-full h-full' /></div>
               Fertilize with plants every 3-4 months. They need to be kept alive in the shade of the leaves.
             </li>
-            <li className='mb-3'>
-              <span className='font-bold'>Pruning: </span>
+            <li className='mb-3 flex justify-center items-center gap-5'>
+              <div className='w-[110px]'><Image src={'/asset/daunHowTo.svg'} alt="daun" width={50} height={50} loading='lazy' className='w-full h-full' /></div>
               Prune plants every 3-4 months. They need to be kept alive in the shade of the leaves.
             </li>
-            <li className='mb-3'>
-              <span className='font-bold'>Remove dead leaves: </span>
+            <li className='mb-3 flex justify-center items-center gap-5'>
+              <div className='w-[110px]'><Image src={'/asset/daunHowTo.svg'} alt="daun" width={50} height={50} loading='lazy' className='w-full h-full' /></div>
               Remove dead leaves. They need to be kept alive in the shade of the leaves.
             </li>
           </ul>
           <button className=''></button>
           <button className='p-5 bg-[#12372A] rounded-full mt-10 text-[#fbfada]'>Catalogue</button>
+        </div>
+      </div>
+      <div className='w-full xl:h-[900px] h-auto bg-[#12372A] mb-12'>
+        <div className='text-[#fbfada]'>
+          <h1 className='text-5xl font-bold text-center pt-14'>What They Say <br />
+            Reviews</h1>
+          <p className='text-center mt-5'>what they say who have bought flowers and ornamental plants <br /> at midori store </p>
+        </div>
+        <div className='flex justify-center items-center flex-col lg:flex-row gap-14 mt-36'>
+          <CardTestimonial nama='Steve Job' deskripsi='"I am very happy with the ornamental plants I bought from Midori Ornamental Plant Shop."' profile='/asset/profile1.jpeg' />
+          <CardTestimonial nama='Elon Musk' deskripsi='"I just started gardening and the staff at Midori Ornamental Plant Shop really helped me choose the right plants for my home. "' profile='/asset/profile2.jpeg' />
+          <CardTestimonial nama='Bill Gates' deskripsi='Midori Ornamental Plant Shop is my favorite place to buy houseplants. They always have a good selection of plants and the prices are always competitive."'profile='/asset/profile3.jpeg' />
         </div>
       </div>
     </div >

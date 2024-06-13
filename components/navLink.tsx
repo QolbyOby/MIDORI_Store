@@ -20,6 +20,6 @@ export default function NavLink({ nameValue, href, className }: Nav) {
     }
 
     return (
-            <button onClick={HandleClik} className={className}>{nameValue}</button>
+            <div onClick={HandleClik} className={className}>{nameValue}</div>
     )
 }

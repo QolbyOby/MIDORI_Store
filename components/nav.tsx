@@ -8,6 +8,8 @@ import Image from 'next/image';
 import { useState } from 'react';
 import Link from 'next/link';
 import { AnimatePresence, motion } from "framer-motion";
+import { signIn, signOut, useSession } from 'next-auth/react';
+import { spicy } from '@/app/layout';
 
 const DynamicCart = dynamic(() => import('@/app/cart/page'), {
   ssr: false
@@ -77,20 +79,32 @@ export default function Nav() {
     },
   };
 
+  const { status }: { status: string } = useSession()
+
 
   return (
-    <nav className="fixed top-0 w-full text-white p-4 flex justify-between items-center bg-transparent z-20">
+    <nav className="fixed top-0 w-full text-white p-4 flex justify-between items-center z-20 ">
       <div className='flex justify-center items-center gap-5'>
-        <NavLink nameValue={<Image src="/asset/logo2.png" alt="logo" width={50} height={50} />} href={'/'} className="text-2xl font-bold text-white" />
-        <h1 className='text-xl font-bold'>MIDORI 緑</h1>
+        <NavLink nameValue={<Image src="/asset/logo2.png" alt="logo" width={50} height={50} />} href={'/'} className="text-2xl font-bold" />
+        <h1 className={`text-xl font-bold hidden md:block ${spicy.className}`} >MIDORI 緑</h1>
       </div>
-      <ul className="space-x-4 justify-center items-center hidden md:flex">
-        <NavLink nameValue={'About'} href={'/about'} className={`hover:text-gray-300 cursor-pointer text-lg ${pathname === '/about' ? "bg-[#12372A] text-white" : ""} py-2 px-3 rounded-md`} />
-        <NavLink nameValue={'Katalog'} href={'/katalog'} className={`hover:text-gray-300 cursor-pointer text-lg ${pathname === '/katalog' ? "bg-[#12372A] text-white" : ""} py-2 px-3 rounded-md`} />
-        <NavLink nameValue={'Contact'} href={'/contact'} className={`hover:text-gray-300 cursor-pointer text-lg ${pathname === '/contact' ? "bg-[#12372A] text-white" : ""} py-2 px-3 rounded-md`} />
+      <ul className="space-x-4 justify-center items-center hidden md:flex text-[#fafada]">
+        <NavLink nameValue={'About'} href={'/about'} className={`hover:text-gray-300 cursor-pointer text-lg ${pathname === '/about' ? "bg-[#12372A] border-2 text-white" : ""}  py-2 px-3 rounded-md`} />
+        <NavLink nameValue={'Katalog'} href={'/katalog'} className={`hover:text-gray-300 cursor-pointer text-lg ${pathname === '/katalog' ? "bg-[#12372A] border-2 text-white" : ""}  py-2 px-3 rounded-md`} />
+        <NavLink nameValue={'Contact'} href={'/contact'} className={`hover:text-gray-300 cursor-pointer text-lg ${pathname === '/contact' ? "bg-[#12372A] border-2 text-white" : ""}  py-2 px-3 rounded-md`} />
+        <NavLink nameValue={'Profile'} href={'/profile'} className={`hover:text-gray-300 cursor-pointer text-lg ${pathname === '/faq' ? "bg-[#12372A] border-2 text-white" : ""}  py-2 px-3 rounded-md`} />
       </ul>
       <div className='flex md-hidden'>
-        <div className='md:flex justify-end items-center gap-4 mr-4 md:w-[144px]'>
+        <div className='md:flex flex justify-end items-center gap-4 mr-4 md:w-[144px]'>
+          {status === 'authenticated' ? (
+            <button onClick={() => signOut()}>
+              logout
+            </button>
+          ) : (
+            <button onClick={() => signIn()}>
+              login
+            </button>
+          )}
           <DynamicCart />
         </div>
         <div
@@ -145,6 +159,14 @@ export default function Nav() {
                       className="text-5xl uppercase text-black"
                     >
                       <Link href={'/contact'} className="text-[#FBFADA] hover:text-white cursor-pointer text-4xl rounded-md" onClick={toggleMobileMenu}>Contact</Link>
+                    </motion.div>
+                  </div>
+                  <div className='overflow-hidden'>
+                    <motion.div
+                      variants={mobileLinkVars}
+                      className="text-5xl uppercase text-black"
+                    >
+                      <Link href={'/profile'} className="text-[#FBFADA] hover:text-white cursor-pointer text-4xl rounded-md" onClick={toggleMobileMenu}>Profile</Link>
                     </motion.div>
                   </div>
                 </motion.div>

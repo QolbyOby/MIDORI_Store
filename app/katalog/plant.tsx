@@ -10,6 +10,7 @@ import { usePathname, useRouter } from 'next/navigation';
 import { animatePageOut } from '../utils/animations';
 import KatalogLink from "./katalogLink";
 import Button from "@/components/buttonAddToCart";
+import convertPrice from "./convertPrice";
 
 interface Product {
     id: number;
@@ -71,7 +72,7 @@ export default function Dimsum() {
                     </div>
                     <div className="flex flex-col justify-center items-center my-6">
                         <h1 className="text-2xl font-semibold text-[#FBFADA]">{item.nama}</h1>
-                        <h2 className="text-l text-[#FBFADA]">{item.harga}</h2>
+                        <h2 className="text-l text-[#FBFADA]">{convertPrice(item.harga)}</h2>
                     </div>
                     <button onClick={() => handleAddToCart(item)} className="mb-6">
                         <Button buttonName="Add To Cart"/>

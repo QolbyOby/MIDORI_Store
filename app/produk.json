@@ -2,122 +2,122 @@
     "flower": [
         {
             "id": 1,
-            "gambar": "/asset/aglaonema.jpeg",
-            "nama": "Aglonema",
-            "harga": 15000,
+            "gambar": "/asset/serenity.png",
+            "nama": "Serenity",
+            "harga": 50000,
             "qty": 1,
             "deskripsi": "",
-            "totalProduk": 15000
+            "totalProduk": 50000
             
         },
         {
             "id": 2,
             "gambar": "/asset/blazingBlossoms.png",
             "nama": "Blazing Blossoms",
-            "harga": 15000,
+            "harga": 65000,
             "qty": 1,
             "deskripsi": "A fiery mix of texture and color, this vibrant bouquet is the perfect fit for the one who's looking for something out of the norm this season. Cool blue tones from thistle fit perfectly alongside bursts of orange roses and bright, golden craspedia. Send this arrangement and watch sparks fly.",
-            "totalProduk": 15000
+            "totalProduk": 65000
             
         },
         {
             "id": 3,
             "gambar": "/asset/autumnSymphony.png",
             "nama": "Atumn Symphony",
-            "harga": 15000,
+            "harga": 40000,
             "qty": 1,
             "deskripsi": "A lavish bouquet inspired by the colors of autumn, featuring exquisite roses, freesias, and seasonal blooms, arranged with branches and adorned with beads in a chic vase.",
-            "totalProduk": 15000
+            "totalProduk": 40000
             
         },
         {
             "id": 4,
             "gambar": "/asset/blueHarmony.png",
             "nama": "Blue Harmony",
-            "harga": 15000,
+            "harga": 70000,
             "qty": 1,
             "deskripsi": "The bohemian spirit and undeniable beauty of 'Blue Harmony' are hard to resist. Hints of blue, coupled with ivory and lavender, make it a harmonious choice that is both calming and balancing. It’s the obvious choice for adding some soft sweetness and tranquility to your space.",
-            "totalProduk": 15000
+            "totalProduk": 70000
             
         },
         {
             "id": 5,
             "gambar": "/asset/dawnsDelight.png",
             "nama": "Dawns Delight",
-            "harga": 15000,
+            "harga": 25000,
             "qty": 1,
             "deskripsi": "This exquisite bouquet features a delicate blend of garden roses, fragrant freesias, lisianthus, and dahlias, all artfully arranged with alchemilla for a touch of elegance",
-            "totalProduk": 15000
+            "totalProduk": 25000
             
         },
         {
             "id": 6,
             "gambar": "/asset/mysticalMajesty.png",
             "nama": "Mystical Majesty",
-            "harga": 15000,
+            "harga": 30000,
             "qty": 1,
             "deskripsi": "A vibrant mix of purple, lilac and pink blossoms. The feminine color palette is pretty without being overtly sweet, much like the rare and magical creature it is named after. Add a touch of purple this season with a mix of lavender-hued roses and sprigs of aster.",
-            "totalProduk": 15000
+            "totalProduk": 30000
             
         },
         {
             "id": 7,
             "gambar": "/asset/pinkElegance.png",
             "nama": "Pink Elegance",
-            "harga": 15000,
+            "harga": 40000,
             "qty": 1,
             "deskripsi": "A grand and sophisticated bouquet in shades of pink, featuring stunning Liliums, Callas, Hydrangeas, Celosia, and Hibiscus fruits, adorned with exotic foliage for added opulence.",
-            "totalProduk": 15000
+            "totalProduk": 40000
             
         },
         {
             "id": 8,
             "gambar": "/asset/snowfall.png",
             "nama": "Snowfall",
-            "harga": 15000,
+            "harga": 50000,
             "qty": 1,
             "deskripsi": "Indulge in pure elegance with our exquisite bouquet, crafted in shades of pristine white. Lush lilies, roses, nerines, euphorbia and hydrangeas come together in a refined and stunning arrangement.",
-            "totalProduk": 15000
+            "totalProduk": 50000
             
         },
         {
             "id": 9,
             "gambar": "/asset/rosyperfection.png",
             "nama": "Rosyperfection",
-            "harga": 15000,
+            "harga": 70000,
             "qty": 1,
             "deskripsi": "Filled with the most beautiful of nature in pink and warm orange tones. In this design you will find, among others, the pink Acroclinium and Curly Ting Ting. The latter looks just as cheerful as its name suggests. And of course, this beautiful bouquet is not complete without the pretty spray rose.",
-            "totalProduk": 15000
+            "totalProduk": 70000
             
         },
         {
             "id": 10,
             "gambar": "/asset/rusticCharm.png",
             "nama": "Rustic Charm",
-            "harga": 15000,
+            "harga": 45000,
             "qty": 1,
             "deskripsi": "A charming bouquet inspired by the countryside, featuring delicate Ancient Roses, Euphorbia, Asclepias, Celosia, and Crocosmias, beautifully arranged to evoke warmth and comfort.",
-            "totalProduk": 15000
+            "totalProduk": 45000
             
         },
         {
             "id": 11,
-            "gambar": "/asset/serenity.png",
-            "nama": "Serenity",
-            "harga": 15000,
+            "gambar": "/asset/frostywinter.png",
+            "nama": "Frosty Winter",
+            "harga": 60000,
             "qty": 1,
             "deskripsi": "A charming bouquet of understated elegance and harmony, featuring exquisite roses, hydrangeas, and ranunculus in soft, delicate tones.",
-            "totalProduk": 15000
+            "totalProduk": 60000
             
         },
         {
             "id": 12,
-            "gambar": "/asset/frostywinter.png",
-            "nama": "Frosty Winter",
-            "harga": 15000,
+            "gambar": "/asset/aglaonema.jpeg",
+            "nama": "Aglaonema",
+            "harga": 65000,
             "qty": 1,
             "deskripsi": "Filled with special stems with natural flower color, because we do not dye our flowers. A bouquet that you will enjoy for a long time. Plus: We have already done the arranging for you, the bouquet can be placed directly in the vase!",
-            "totalProduk": 15000
+            "totalProduk": 65000
             
         }
 
@@ -128,100 +128,100 @@
             "id": 1,
             "gambar": "/asset/birdsnestfern.jpeg",
             "nama": "Bird Nestfern",
-            "harga": 10000,
+            "harga": 150000,
             "qty": 1,
-            "deskripsi": "A lavish bouquet inspired by the colors of autumn, featuring exquisite roses, freesias, and seasonal blooms, arranged with branches and adorned with beads in a chic vase.",
-            "totalProduk": 10000
+            "deskripsi": "The Bird Nest Fern is a type of fern with wide, glossy, and slightly wavy green leaves. Its leaves grow in a rosette formation resembling a bird's nest, giving it a characteristic tropical look. This plant is suitable for shady indoor corners or on a porch to add a touch of greenery. Bird Nest Fern is also known for its air-purifying qualities, making it both beautiful and beneficial for health.",
+            "totalProduk": 150000
         },
         {
             "id": 2,
             "gambar": "/asset/snakeplant.jpeg",
             "nama": "Snake Plant",
-            "harga": 15000,
+            "harga": 70000,
             "qty": 1,
-            "deskripsi": "A lavish bouquet inspired by the colors of autumn, featuring exquisite roses, freesias, and seasonal blooms, arranged with branches and adorned with beads in a chic vase.",
-            "totalProduk": 15000
+            "deskripsi": "The Snake Plant, also known as Mother-in-Law's Tongue, has long, stiff, upright leaves with horizontal stripes in shades of green. This plant is highly resilient and can thrive in various environmental conditions, including low light and infrequent watering. Additionally, the Snake Plant is known for its ability to absorb toxins from the air, making it an ideal choice for indoor spaces like homes or offices.",
+            "totalProduk": 70000
         },
         {
             "id": 3,
             "gambar": "/asset/cereusJamacaru.jpeg",
             "nama": "Cereus Jamacaru",
-            "harga": 15000,
+            "harga": 80000,
             "qty": 1,
-            "deskripsi": "A lavish bouquet inspired by the colors of autumn, featuring exquisite roses, freesias, and seasonal blooms, arranged with branches and adorned with beads in a chic vase.",
-            "totalProduk": 15000
+            "deskripsi": "The Cereus Jamacaru, also known as the Cereus Cactus, is a tall cactus with ribbed stems that can grow very large. It has short, sturdy spines and large flowers that usually bloom at night. The cactus flowers can range from white to pink and have a fragrant aroma. Cereus Jamacaru is ideal for adding an exotic touch to gardens or as a potted plant indoors.",
+            "totalProduk": 80000
         },
         {
             "id": 4,
             "gambar": "/asset/licualaGrandis.jpeg",
             "nama": "Licuala Grandis",
-            "harga": 15000,
+            "harga": 75000,
             "qty": 1,
-            "deskripsi": "A lavish bouquet inspired by the colors of autumn, featuring exquisite roses, freesias, and seasonal blooms, arranged with branches and adorned with beads in a chic vase.",
-            "totalProduk": 15000
+            "deskripsi": "Licuala Grandis, also known as the Vanuatu Fan Palm, features large, glossy green fan-shaped leaves. Its majestic leaves give an exotic and luxurious appearance. This plant is perfect for indoor decoration or in shaded garden areas. Additionally, Licuala Grandis is relatively easy to care for.",
+            "totalProduk": 75000
         },
         {
             "id": 5,
             "gambar": "/asset/zamioculcasZamiifolia.jpeg",
             "nama": "Zamioculcas Zamiifolia",
-            "harga": 15000,
+            "harga": 55000,
             "qty": 1,
-            "deskripsi": "A lavish bouquet inspired by the colors of autumn, featuring exquisite roses, freesias, and seasonal blooms, arranged with branches and adorned with beads in a chic vase.",
-            "totalProduk": 15000
+            "deskripsi": "The ZZ Plant has glossy green leaves that are thick and fleshy, giving a modern and elegant look. This plant is very easy to care for and long-lasting, making it a favorite choice for both beginners and plant enthusiasts. The ZZ Plant is also known for thriving in low light conditions, making it very versatile for various indoor placements.",
+            "totalProduk": 55000
         },
         {
             "id": 6,
             "gambar": "/asset/stromantheTriostar.jpeg",
             "nama": "Stromanthe Triostar",
-            "harga": 15000,
+            "harga": 65000,
             "qty": 1,
-            "deskripsi": "A lavish bouquet inspired by the colors of autumn, featuring exquisite roses, freesias, and seasonal blooms, arranged with branches and adorned with beads in a chic vase.",
-            "totalProduk": 15000
+            "deskripsi": "The Stromanthe Triostar is a decorative plant with long leaves that feature beautiful variegated patterns of green, white, and pink. Its unique and attractive leaf patterns make it a centerpiece in any room. This plant adds a touch of bright and exotic color, ideal for spaces with indirect lighting.",
+            "totalProduk": 65000
         },
         {
             "id": 7,
             "gambar": "/asset/palemParlor.jpeg",
             "nama": "Palem Parlor",
-            "harga": 15000,
+            "harga": 60000,
             "qty": 1,
-            "deskripsi": "A lavish bouquet inspired by the colors of autumn, featuring exquisite roses, freesias, and seasonal blooms, arranged with branches and adorned with beads in a chic vase.",
-            "totalProduk": 15000
+            "deskripsi": " The Parlor Palm is a small palm plant with graceful, delicate fronds, giving an elegant tropical touch. This plant is ideal as an indoor decorative plant due to its tolerance to low light conditions. Additionally, the Parlor Palm is known to improve indoor air quality.",
+            "totalProduk": 60000
         },
         {
             "id": 8,
             "gambar": "/asset/memelong.jpeg",
             "nama": "Memelong",
-            "harga": 15000,
+            "harga": 70000,
             "qty": 1,
-            "deskripsi": "Indulge in pure elegance with our exquisite bouquet, crafted in shades of pristine white. Lush lilies, roses, nerines, euphorbia and hydrangeas come together in a refined and stunning arrangement.",
-            "totalProduk": 15000
+            "deskripsi": "Memelong, also known as the Chenille Plant, features long, red, cat-tail-like flowers. Its wide, dark green leaves provide a striking contrast with the vibrant flowers. This plant is perfect as a hanging plant or placed in large pots to create a striking visual impact.",
+            "totalProduk": 70000
         },
         {
             "id": 9,
             "gambar": "/asset/marantaLeuconeura.jpeg",
             "nama": "Maranta Leuconeura",
-            "harga": 15000,
+            "harga": 75000,
             "qty": 1,
-            "deskripsi": "Indulge in pure elegance with our exquisite bouquet, crafted in shades of pristine white. Lush lilies, roses, nerines, euphorbia and hydrangeas come together in a refined and stunning arrangement.",
-            "totalProduk": 15000
+            "deskripsi": "The Maranta Leuconeura, also known as the Prayer Plant, has green leaves with unique patterns and red veins. Its leaves fold up at night as if in prayer, adding to the plant's charm. This plant is perfect for indoor spaces with indirect light, adding a calming touch of greenery.",
+            "totalProduk": 75000
         },
         {
             "id": 10,
             "gambar": "/asset/aloeVera.jpeg",
             "nama": "Aloe Vera",
-            "harga": 15000,
+            "harga": 95000,
             "qty": 1,
-            "deskripsi": "Indulge in pure elegance with our exquisite bouquet, crafted in shades of pristine white. Lush lilies, roses, nerines, euphorbia and hydrangeas come together in a refined and stunning arrangement.",
-            "totalProduk": 15000
+            "deskripsi": "Aloe Vera is a succulent plant with thick, green leaves that contain a gel with numerous health benefits. Aloe Vera gel is often used for skincare, hair care, and treating minor wounds. This plant is easy to care for and suitable as both a decorative and medicinal plant at home.",
+            "totalProduk": 95000
         },
         {
             "id": 11,
             "gambar": "/asset/aglaonema.jpeg",
             "nama": "Aglonema",
-            "harga": 15000,
+            "harga": 65000,
             "qty": 1,
-            "deskripsi": "Indulge in pure elegance with our exquisite bouquet, crafted in shades of pristine white. Lush lilies, roses, nerines, euphorbia and hydrangeas come together in a refined and stunning arrangement.",
-            "totalProduk": 15000
+            "deskripsi": "Aglonema, also known as the Chinese Evergreen, features beautiful leaves with varying shades of green, white, and pink. This plant is very resilient and can withstand various environmental conditions, including low light and fluctuating temperatures. Aglonema is an ideal choice for enhancing the beauty and freshness of indoor spaces.",
+            "totalProduk": 65000
         }
     ],
 
@@ -230,74 +230,74 @@
             "id": 1,
             "gambar": "/asset/birdsnestfern.jpeg",
             "nama": "Bird Nestfern",
-            "harga": 10000,
+            "harga": 150000,
             "qty": 1,
-            "deskripsi": "A lavish bouquet inspired by the colors of autumn, featuring exquisite roses, freesias, and seasonal blooms, arranged with branches and adorned with beads in a chic vase.",
-            "totalProduk": 10000
+            "deskripsi": "The Bird Nest Fern is a type of fern with wide, glossy, and slightly wavy green leaves. Its leaves grow in a rosette formation resembling a bird's nest, giving it a characteristic tropical look. This plant is suitable for shady indoor corners or on a porch to add a touch of greenery. Bird Nest Fern is also known for its air-purifying qualities, making it both beautiful and beneficial for health.",
+            "totalProduk": 150000
         },
         {
             "id": 2,
             "gambar": "/asset/snakeplant.jpeg",
             "nama": "Snake Plant",
-            "harga": 15000,
+            "harga": 70000,
             "qty": 1,
-            "deskripsi": "A lavish bouquet inspired by the colors of autumn, featuring exquisite roses, freesias, and seasonal blooms, arranged with branches and adorned with beads in a chic vase.",
-            "totalProduk": 15000
+            "deskripsi": "The Snake Plant, also known as Mother-in-Law's Tongue, has long, stiff, upright leaves with horizontal stripes in shades of green. This plant is highly resilient and can thrive in various environmental conditions, including low light and infrequent watering. Additionally, the Snake Plant is known for its ability to absorb toxins from the air, making it an ideal choice for indoor spaces like homes or offices.",
+            "totalProduk": 70000
         },
         {
             "id": 3,
             "gambar": "/asset/cereusJamacaru.jpeg",
             "nama": "Cereus Jamacaru",
-            "harga": 15000,
+            "harga": 80000,
             "qty": 1,
-            "deskripsi": "A lavish bouquet inspired by the colors of autumn, featuring exquisite roses, freesias, and seasonal blooms, arranged with branches and adorned with beads in a chic vase.",
-            "totalProduk": 15000
+            "deskripsi": "The Cereus Jamacaru, also known as the Cereus Cactus, is a tall cactus with ribbed stems that can grow very large. It has short, sturdy spines and large flowers that usually bloom at night. The cactus flowers can range from white to pink and have a fragrant aroma. Cereus Jamacaru is ideal for adding an exotic touch to gardens or as a potted plant indoors.",
+            "totalProduk": 80000
         },
         {
             "id": 4,
             "gambar": "/asset/licualaGrandis.jpeg",
             "nama": "Licuala Grandis",
-            "harga": 15000,
+            "harga": 75000,
             "qty": 1,
-            "deskripsi": "A lavish bouquet inspired by the colors of autumn, featuring exquisite roses, freesias, and seasonal blooms, arranged with branches and adorned with beads in a chic vase.",
-            "totalProduk": 15000
+            "deskripsi": "Licuala Grandis, also known as the Vanuatu Fan Palm, features large, glossy green fan-shaped leaves. Its majestic leaves give an exotic and luxurious appearance. This plant is perfect for indoor decoration or in shaded garden areas. Additionally, Licuala Grandis is relatively easy to care for.",
+            "totalProduk": 75000
         },
         {
             "id": 5,
             "gambar": "/asset/zamioculcasZamiifolia.jpeg",
             "nama": "Zamioculcas Zamiifolia",
-            "harga": 15000,
+            "harga": 55000,
             "qty": 1,
-            "deskripsi": "A lavish bouquet inspired by the colors of autumn, featuring exquisite roses, freesias, and seasonal blooms, arranged with branches and adorned with beads in a chic vase.",
-            "totalProduk": 15000
+            "deskripsi": "The ZZ Plant has glossy green leaves that are thick and fleshy, giving a modern and elegant look. This plant is very easy to care for and long-lasting, making it a favorite choice for both beginners and plant enthusiasts. The ZZ Plant is also known for thriving in low light conditions, making it very versatile for various indoor placements.",
+            "totalProduk": 55000
         },
         {
             "id": 6,
             "gambar": "/asset/stromantheTriostar.jpeg",
             "nama": "Stromanthe Triostar",
-            "harga": 15000,
+            "harga": 65000,
             "qty": 1,
-            "deskripsi": "A lavish bouquet inspired by the colors of autumn, featuring exquisite roses, freesias, and seasonal blooms, arranged with branches and adorned with beads in a chic vase.",
-            "totalProduk": 15000
+            "deskripsi": "The Stromanthe Triostar is a decorative plant with long leaves that feature beautiful variegated patterns of green, white, and pink. Its unique and attractive leaf patterns make it a centerpiece in any room. This plant adds a touch of bright and exotic color, ideal for spaces with indirect lighting.",
+            "totalProduk": 65000
         },
         {
             "id": 7,
             "gambar": "/asset/palemParlor.jpeg",
             "nama": "Palem Parlor",
-            "harga": 15000,
+            "harga": 60000,
             "qty": 1,
-            "deskripsi": "A lavish bouquet inspired by the colors of autumn, featuring exquisite roses, freesias, and seasonal blooms, arranged with branches and adorned with beads in a chic vase.",
-            "totalProduk": 15000
+            "deskripsi": " The Parlor Palm is a small palm plant with graceful, delicate fronds, giving an elegant tropical touch. This plant is ideal as an indoor decorative plant due to its tolerance to low light conditions. Additionally, the Parlor Palm is known to improve indoor air quality.",
+            "totalProduk": 60000
         },
         
         {
             "id": 8,
             "gambar": "/asset/snowfall.png",
             "nama": "Snowfall",
-            "harga": 15000,
+            "harga": 50000,
             "qty": 1,
             "deskripsi": "Indulge in pure elegance with our exquisite bouquet, crafted in shades of pristine white. Lush lilies, roses, nerines, euphorbia and hydrangeas come together in a refined and stunning arrangement.",
-            "totalProduk": 15000
+            "totalProduk": 50000
             
         }
         

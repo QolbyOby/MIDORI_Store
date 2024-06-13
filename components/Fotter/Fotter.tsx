@@ -12,11 +12,11 @@ export default function () {
     const isMobile = useMediaQuery({ maxWidth: 768 });
 
     return (
-        <footer className=" relative flex items-center justify-center p-10 bg-[#1A4D2E] text-white">
+        <footer className=" relative flex items-center justify-center p-10 bg-[#1A4D2E] text-white overflow-hidden">
             {!isMobile && (
                 <>
-                <Image src="/asset/footer.png" alt="logo" width={300} height={300} className='absolute left-0 bottom-0 ' />
-                <Image src="/asset/footer.png" alt="logo" width={300} height={300} className='absolute right-0 -bottom-0 scale-x-[-1]' />
+                <Image src="/asset/Group 7.svg" alt="logo" width={250} height={250} className='absolute -left-4 -bottom-1 scale-x-[-1]' />
+                <Image src="/asset/Group 7.svg" alt="logo" width={250} height={250} className='absolute -right-4 -bottom-1 ' />
                 </>
             )}
             
